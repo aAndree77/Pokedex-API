@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="Flying type.icon">
+<link href="https://fonts.googleapis.com/css2?family=Joti+One&family=Luckiest+Guy&family=Orbitron:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script2.js" defer></script>
+    
+</head>
+<body>
+    <div id="container">
+        <img src="/images/pokeball.svg" alt="" id="background-pokeball">
+        <div id="mini-container1">
+            <div id="name-container">
+                <svg  id="back" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+                <h1 id="name"></h1>
+                <h2 id="id"></h2>
+            </div>
+            <div id="img-container">
+                <svg id="prev" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                <img src="" alt="">
+                <svg id="next"xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+            </div>
+        <div id="mini-container2">
+            <div id="details">
+                <span id="putere"></span>
+                <span id="genera">Seed Pokemon</span>
+                <img src="" id="type">
+                <span id="about">About</span>
+                <div id="details2">
+                    <div  class="parinte">
+                        <div class="mini-parinte">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-200h480l-57-400H297l-57 400Zm240-480q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm113 0h70q30 0 52 20t27 49l57 400q5 36-18.5 63.5T720-120H240q-37 0-60.5-27.5T161-211l57-400q5-29 27-49t52-20h70q-3-10-5-19.5t-2-20.5q0-50 35-85t85-35q50 0 85 35t35 85q0 11-2 20.5t-5 19.5ZM240-200h480-480Z"/></svg>
+                            <p class="increments"></p>
+                        </div>
+                        <p class="types">Weight</p>
+                    </div>
+                    <hr class="hr">
+                    <div class="parinte">
+                        <div class="mini-parinte">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-240q-33 0-56.5-23.5T80-320v-320q0-33 23.5-56.5T160-720h640q33 0 56.5 23.5T880-640v320q0 33-23.5 56.5T800-240H160Zm0-80h640v-320H680v160h-80v-160h-80v160h-80v-160h-80v160h-80v-160H160v320Zm120-160h80-80Zm160 0h80-80Zm160 0h80-80Zm-120 0Z"/></svg>
+                            <p class="increments"></p>                            
+                        </div>
+                        <p class="types">Height</p>
+                    </div>
+                    <hr class="hr">
+                    <div class="parinte">
+                        <div class="mini-parinte">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m422-232 207-248H469l29-227-185 267h139l-30 208ZM320-80l40-280H160l360-520h80l-40 320h240L400-80h-80Zm151-390Z"/></svg>
+                            <p class="increments"></p>                            
+                        </div>
+                        <p class="types">Abilities</p>
+                    </div>
+                </div>
+                <p id="desc"></p>
+                <h1 id="title-stats">Base stats</h1>
+                <div class="stats">
+                    <p>HP</p>
+                    <hr>
+                    <p>65</p>
+                    <progress value="0" max="200" min="0" id="bar1"></progress>
+                </div>
+                <div class="stats">
+                    <p>ATK</p>
+                    <hr>
+                    <p>90</p>
+                    <progress value="0" max="200" min="0" id="bar2"></progress>
+                </div>
+                <div class="stats">
+                    <p>DEF</p>
+                    <hr>
+                    <p>40</p>
+                    <progress value="0" max="200" min="0" id="bar3"></progress>
+                </div>
+                <div class="stats">
+                    <p>SATK</p>
+                    <hr>
+                    <p>15</p>
+                    <progress value="0" max="200" min="0" id="bar4"></progress>
+                </div>
+                <div class="stats">
+                    <p>SDEF</p>
+                    <hr>
+                    <p>20</p>
+                    <progress value="0" max="200" min="0" id="bar5"></progress>
+                </div>
+                <div class="stats">
+                    <p>SPD</p>
+                    <hr>
+                    <p>75</p>
+                    <progress value="0" max="200" min="0" id="bar6"></progress>
+                </div>
+                <h2 id="evolution-title">Evolutions</h2>
+                <div id="evolution-wrapper">
+                    <div class="evolution-item">
+                        <p class="evo-name" id="evo-name1">1</p>
+                        <div class="evolution-div">
+                            <img src="" alt="" id="evo1">
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="black" d="M2,12 L22,12 M16,6 L22,12 L16,18"/>
+                        </svg>
+                    </div>
+                    <div class="evolution-item">
+                        <p class="evo-name" id="evo-name2">2</p>
+                        <div class="evolution-div">
+                            <img src="" alt="" id="evo2">
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <svg width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="black" d="M2,12 L22,12 M16,6 L22,12 L16,18"/>
+                        </svg>
+                    </div>
+                    <div class="evolution-item">
+                        <p class="evo-name" id="evo-name3">3</p>
+                        <div class="evolution-div">
+                            <img src="" alt="" id="evo3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

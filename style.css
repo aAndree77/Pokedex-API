@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  background-color: rgb(255, 57, 57);
+  height: 100vh;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+}
+#img {
+  width: 50px;
+
+}
+.titlu-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#title{
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-family: "Luckiest Guy";
+}
+#input {
+  margin-top: 10px;
+  height: 6%;
+  width: 400px;
+  border-radius: 20px ;
+  border: 2px solid gray;
+  padding: 12px;
+}
+
+#input:focus {
+  border: 2px solid gray;
+  outline: none;
+}
+
+#input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
+  -webkit-text-fill-color: gray;
+  border:2px solid gray;
+}
+
+#pokemon-container {
+  padding: 20px;
+  margin-top: 22px;
+  height: 76vh;
+  width: 97vw;
+  background-color: white;
+  overflow-y: scroll;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 20px;
+  border: 1px solid black;
+
+
+  
+}
+.pokemon:hover {
+  cursor: pointer;
+  transition: 0.15s;
+  transform: translateY(-10px);
+}
+
+#pokemon-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+#pokemon-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+
+#pokemon-container::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+#pokemon-container::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff8a8a, red);
+}
+
+
+.pokemon {
+  border: 2px solid rgb(190, 23, 23);
+  border-radius:20px ;
+  width:160px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 8px black;
+}
+
+.grey-div {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  border: none;
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius: 20px;
+  height: 70px;
+  width: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.nume {
+  font-family: "Luckiest Guy";
+  color: white;
+  -webkit-text-stroke:1.3px rgb(0, 0, 0);
+  font-size: 1.2rem;
+}
+.imagine {
+  height:85px ;
+  width: 85px ;
+  transform: translateY(10px);
+}
+
+.id-container {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-family: "Luckiest Guy";
+  position: relative;
+}
+
+.type {
+  position: absolute;
+  right: 75%;
+  top: 0%;
+  width: 20px;
+}
+
+
+@media (max-width:400px){
+  #input {
+    width: 200px;
+  }
+}
